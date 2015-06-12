@@ -1,0 +1,104 @@
+body{
+	margin:0;
+	background-color:#369  !important;
+	overflow:auto;
+}
+
+#btn1, #btn2, #btn3, #btn4, #btn5, #btn6{
+	position:relative;
+	cursor:pointer;
+
+	height:10em;
+	color:#FFF;
+	font-size:25px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding-left:10px;
+	text-align:left;
+	margin-bottom:2%;
+}
+
+
+#btn1{
+	background:#06F;
+
+
+	
+}
+#btn2{
+	background:#C30;
+
+}
+
+#btn3{
+	background:#F60;
+
+}
+
+#btn4{
+	background:#C3C;
+
+}
+#btn5{
+	background:#F36;
+
+}
+
+#btn6{
+	background:#6C0;
+
+}
+
+#content{
+	z-index:0;
+	display: none;
+
+}
+
+#content iframe{
+	background:#369;
+
+	width:100%;
+	min-height:500px;
+	float:left;
+
+}
+
+
+
+#pagecaption{
+	position:relative;
+	top:-60px;
+	
+	color:#FFF;
+	font-size:2em;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.truckHeader
+{
+	background-color:#333;
+	color: white;
+	font-size:2.5em;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding-top:2%;
+	padding-bottom:2%;
+
+}
+
+.sectionBody
+{
+	margin-top:2%;
+}

@@ -1,0 +1,14 @@
+.row
+{
+	padding: 1%;
+}
+
+.row div
+{
+	background-color : #e5e0ea;
+
+	border: solid 1px black;
+	padding: 1%;
+
+}
+
