@@ -4,7 +4,8 @@
 
 body{
 	margin:0;
-	background-color:#369  !important;
+	background-color:#1da3b9 !important;
+        /*#369 */
 	overflow:auto;
 }
 
@@ -23,14 +24,14 @@ body{
 
 
 #btn1{
-	background:#94A77C;
+	background:#41d394;
         /*#06F;*/
 
 
 
 }
 #btn2{
-	background:#BFFF71;
+	background:#ff5e37;
         /*#C30;*/
 
 }
@@ -42,12 +43,13 @@ body{
 }
 
 #btn4{
-	background:#607F39;
+	background:#ffcd05;
         /*#C3C;*/
 
 }
 #btn5{
-	background:#F36;
+	background:#1da3b9;
+        /*#F36;*/
 
 }
 
