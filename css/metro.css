@@ -1,3 +1,7 @@
+/*
+* variables de couleur
+*/
+
 body{
 	margin:0;
 	background-color:#369  !important;
@@ -19,23 +23,27 @@ body{
 
 
 #btn1{
-	background:#06F;
+	background:#94A77C;
+        /*#06F;*/
 
 
-	
+
 }
 #btn2{
-	background:#C30;
+	background:#BFFF71;
+        /*#C30;*/
 
 }
 
 #btn3{
-	background:#F60;
+	background:#E2FFBE;
+        /*#F60;*/
 
 }
 
 #btn4{
-	background:#C3C;
+	background:#607F39;
+        /*#C3C;*/
 
 }
 #btn5{
@@ -68,7 +76,7 @@ body{
 #pagecaption{
 	position:relative;
 	top:-60px;
-	
+
 	color:#FFF;
 	font-size:2em;
 	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
