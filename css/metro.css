@@ -4,7 +4,7 @@
 
 body{
 	margin:0;
-	background-color:#363640 !important;
+	background-color:#f9f2e8 !important;
         /* 2 : #1da3b9 */
         /*#369 */
 	overflow:auto;
@@ -25,7 +25,8 @@ body{
 
 
 #btn1{
-	background:#58886e;
+	background:#4fb19d;
+        /* 3 : #58886e; */
         /* 2 : #e43424;*/
         /* 1 : #06F;*/
 
@@ -33,14 +34,16 @@ body{
 
 }
 #btn2{
-	background:#76a9b0;
+	background:#e23a6e;
+        /*#76a9b0;*/
         /*#0d9459;*/
         /*#C30;*/
 
 }
 
 #btn3{
-	background:#f0b420;
+	background: #f2b30e;
+        /*#f0b420;*/
         /*#005ba1;*/
         /*#F60;*/
 
@@ -104,7 +107,7 @@ body{
 
 .truckHeader
 {
-	background-color:#363640;
+	background-color:#221d1d;
         /*#333;*/
 	color: white;
 	font-size:2.5em;
