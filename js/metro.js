@@ -15,13 +15,14 @@ $(document).ready(function(){
   //TweenLite.to($("#btn4"),2,{css:{left:0},delay:0.5, ease:Power2.easeOut});
 
   });
-  
+
 function clickToButton(i, show)
 {
    show = typeof show !== 'undefined' ? show : 0;
 
 	if(show==0){$("#backbutton").show("slow");}
 	else{$("#backbutton").hide("slow");}
+
 	toggleContentAndButtons();
 	$("#caption").fadeTo("slow",0, function(){
 		$(this).text(textMenu[i]);
@@ -31,7 +32,7 @@ function clickToButton(i, show)
 	TweenLite.to($("#content"),0.5,{css:{top:show}, ease:Power2.easeOut});
 
 }
-  
+
 function toggleContentAndButtons()
 {
 	$("#content, #buttonsToContent").slideToggle("slow");
@@ -39,23 +40,23 @@ function toggleContentAndButtons()
   $("#btn1").click(function(){
 	clickToButton(1);
   });
-  
+
   $("#btn2").click(function(){
-	clickToButton(2);	 
+	clickToButton(2);
   });
-  
+
   $("#btn3").click(function(){
  	clickToButton(3);
   });
-  
+
   $("#btn4").click(function(){
 	clickToButton(4);
-  
+
   });
 
-  
+
    $("#backbutton").click(function(){
 		clickToButton(0,500);
-	});   
-	
+	});
+
 })();
