@@ -1,62 +1,59 @@
 (function(){
 
-var textMenu = ["Bannière Organic Truck",
-				"L'organic Truck",
-				"Richesse Locale",
-				"Partage des Recettes",
-				"Qui sommes nous?"];
+var appName = "Organic Truck";
 
-$(document).ready(function(){
-  TweenLite.to($("#caption"),0,{css:{top:0},delay:0, ease:Power2.easeOut});
-  $("#backbutton").hide();
-  //TweenLite.to($("#btn1"),2,{css:{left:0},delay:0, ease:Power2.easeOut});
-  //TweenLite.to($("#btn2"),2,{css:{left:20},delay:0, ease:Power2.easeOut});
-  //TweenLite.to($("#btn3"),2,{css:{left:40},delay:0, ease:Power2.easeOut});
-  //TweenLite.to($("#btn4"),2,{css:{left:0},delay:0.5, ease:Power2.easeOut});
+var Articles = [new ArticleMetro("Où nous trouver?", "<p>Hello world</p>",0),
+				new ArticleMetro("Nos produits", "<p>Nos produits</p>",1),
+				new ArticleMetro("Nos producteurs", "<p>Nos producteurs</p>",2),
+				new ArticleMetro("Partage de nos recettes", "<p>Hello world</p>",3),
+				new ArticleMetro("Qui sommes nous?", "<p>Nos produits</p>",4),
+				new ArticleMetro("Partenaires", "<p>Nos partenaires</p>",5)];
 
-  });
 
-function clickToButton(i, show)
+function clickToButton(i)
 {
-   show = typeof show !== 'undefined' ? show : 0;
 
-	if(show==0){$("#backbutton").show("slow");}
-	else{$("#backbutton").hide("slow");}
-
+	$("#backbutton").show("slow");
+	$("#contentApp").html(Articles[i].getArticleContent());
 	toggleContentAndButtons();
+	changeTopTitle(Articles[i].getTitle());
+}
+
+function clickToBackButton(i)
+{
+	$("#backbutton").hide();
+	toggleContentAndButtons();
+	changeTopTitle(appName);
+}
+
+function changeTopTitle(str)
+{
 	$("#caption").fadeTo("slow",0, function(){
-		$(this).text(textMenu[i]);
+		$(this).text(str);
 		$(this).fadeTo("slow",1);
 
 	});
-	TweenLite.to($("#content"),0.5,{css:{top:show}, ease:Power2.easeOut});
-
 }
 
 function toggleContentAndButtons()
 {
-	$("#content, #buttonsToContent").slideToggle("slow");
+	$("#contentApp, #buttonsToContent").slideToggle("slow");
 }
-  $("#btn1").click(function(){
-	clickToButton(1);
+
+$(document).ready(function(){
+  $("#backbutton").hide();
+
+  var tmpStr = "";
+  for(var count =0; count<Articles.length; count++)
+  {
+	tmpStr = tmpStr + Articles[count].getContent();
+  }
+
+  $("#buttonsToContent").html(tmpStr);
+  $(".btnMetro").click(function(){clickToButton(this.id);})
+  $("#backbutton").click(function(){clickToBackButton();})
+
+
   });
-
-  $("#btn2").click(function(){
-	clickToButton(2);
-  });
-
-  $("#btn3").click(function(){
- 	clickToButton(3);
-  });
-
-  $("#btn4").click(function(){
-	clickToButton(4);
-
-  });
-
-
-   $("#backbutton").click(function(){
-		clickToButton(0,500);
-	});
 
 })();

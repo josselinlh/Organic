@@ -11,7 +11,7 @@ body{
 	overflow:auto;
 }
 
-#btn1, #btn2, #btn3, #btn4, #btn5, #btn6{
+.btn1, .btn2, .btn3, .btn4, .btn5, .btn6{
 	position:relative;
 	cursor:pointer;
 
@@ -25,7 +25,7 @@ body{
 }
 
 
-#btn1{
+.btn1{
 	background:#4fb19d;
         /* 3 : #58886e; */
         /* 2 : #e43424;*/
@@ -34,7 +34,7 @@ body{
 
 
 }
-#btn2{
+.btn2{
 	background:#e23a6e;
         /*#76a9b0;*/
         /*#0d9459;*/
@@ -42,7 +42,7 @@ body{
 
 }
 
-#btn3{
+.btn3{
 	background: #f2b30e;
         /*#f0b420;*/
         /*#005ba1;*/
@@ -50,31 +50,21 @@ body{
 
 }
 
-#btn4{
+.btn4{
 	background:#e85f22;
         /*#dd322b;*/
         /*#e27728;*/
         /*#C3C;*/
 
 }
-#btn5{
-	background:#1da3b9;
-        /*#F36;*/
 
-}
-
-#btn6{
-	background:#6C0;
-
-}
-
-#content{
+#contentApp{
 	z-index:0;
 	display: none;
 
 }
 
-#content iframe{
+#contentApp iframe{
 	background:#e85f22;
 
 	width:100%;
