@@ -12,18 +12,26 @@ body{
 }
 
 .btn1, .btn2, .btn3, .btn4, .btn5, .btn6{
-	position:relative;
-	cursor:pointer;
 
-	height:10em;
 	color:#FFF;
-	font-size:25px;
 	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	padding-left:10px;
 	text-align:left;
 	margin-bottom:2%;
 }
 
+.btnMetro
+{
+	height:10em;
+	font-size:2.5em;
+  	cursor:pointer;
+
+}
+
+#backbutton
+{
+	cursor:pointer;
+}
 
 .btn1{
 	background:#4fb19d;
@@ -62,13 +70,7 @@ body{
 	z-index:0;
 	display: none;
 
-}
-
-#contentApp iframe{
-	background:#e85f22;
-
 	width:100%;
-	min-height:500px;
 
 }
 
@@ -93,11 +95,14 @@ body{
 
 
 
-.article_content
+.articleMetro
 {
 	color: white;
     font-size:2.5em;
 	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+   /* height:750px;*/
+    border:red solid 3px;
+
 }
 
 
