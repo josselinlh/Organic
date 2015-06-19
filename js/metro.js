@@ -9,6 +9,12 @@ var Articles = [new ArticleMetro("Où nous trouver?", "<p>Hello world</p>",0),
 				new ArticleMetro("Qui sommes nous?", "<p>Nos produits</p>",4),
 				new ArticleMetro("Partenaires", "<p>Nos partenaires</p>",5)];
 
+    orderArticles(Articles);
+
+function orderArticles(tab)
+    {
+        console.log("changeColor");
+    }
 
 function clickToButton(i)
 {
