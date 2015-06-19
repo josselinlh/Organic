@@ -18,12 +18,21 @@ function orderArticles(tab)
             {
                 if(tab[count].getColor()==lastColor)
                     {
-                        tab[count].setColor(lastColor+1);
-                                console.log("changeColor");
+                        tab[count].setColor(lastColor%4+1);
+                                console.log("changeColor count = "+count);
+                                console.log("lastColor : "+lastColor);
+                        console.log("getColor : "+tab[count].getColor());
+
 
                     }
                 lastColor = tab[count].getColor();
+
+                 if(count%3==0)
+                {
+                    tab[count].setContent(2);
+                }
             }
+
     }
 
 function clickToButton(i)

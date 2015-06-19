@@ -1,12 +1,17 @@
-function ArticleMetro(title, content, id)
+function ArticleMetro(title, contentArgument, id)
 {
 	this.title = title;
 	this.id = id;
 	this.idColor = Math.floor((Math.random() * 4) + 1);
+    this.contentArgument=contentArgument;
 
+	this.refreshView();
+}
 
+ArticleMetro.prototype.refreshView = function()
+{
 	this.setContent();
-	this.setContentArticle(content);
+	this.setContentArticle(this.contentArgument);
 }
 
 ArticleMetro.prototype.getContent = function()
@@ -19,9 +24,11 @@ ArticleMetro.prototype.getArticleContent = function()
 	return this.contentArticle;
 }
 
-ArticleMetro.prototype.setContent = function(content)
+ArticleMetro.prototype.setContent = function(offset)
 {
-	var str = '<div id="'+this.id+'" class="btnMetro btn'+this.idColor+' col-xs-12 col-sm-6 col-md-2 col-md-offset-1">';
+    offset = typeof offset !== 'undefined' ? offset : 1;
+
+	var str = '<div id="'+this.id+'" class="btnMetro btn'+this.idColor+' col-xs-12 col-sm-6 col-md-2 col-md-offset-'+offset+'">';
 	var endStr = '</div>';
 
 	this.content = str+this.title+endStr;
@@ -47,10 +54,15 @@ ArticleMetro.prototype.setTitle = function(title)
 
 ArticleMetro.prototype.getColor = function()
 {
-	return this.color;
+	return this.idColor;
 }
 
 ArticleMetro.prototype.setColor = function(color)
 {
-	this.color = color;
+    if(color<0 || color>4)
+        this.idColor=1;
+    else
+        this.idColor = color;
+    this.refreshView();
+
 }
