@@ -13,7 +13,17 @@ var Articles = [new ArticleMetro("Où nous trouver?", "<p>Hello world</p>",0),
 
 function orderArticles(tab)
     {
-        console.log("changeColor");
+        var lastColor = 0;
+        for(var count = 0; count < tab.length; count++)
+            {
+                if(tab[count].getColor()==lastColor)
+                    {
+                        tab[count].setColor(lastColor+1);
+                                console.log("changeColor");
+
+                    }
+                lastColor = tab[count].getColor();
+            }
     }
 
 function clickToButton(i)
