@@ -31,7 +31,7 @@ ArticleMetro.prototype.setContent = function(offset)
 	var str = '<div id="'+this.id+'" class="btnMetro btn'+this.idColor+' col-xs-12 col-sm-6 col-md-2 col-md-offset-'+offset+'">';
 	var endStr = '</div>';
 
-	this.content = str+this.title+endStr;
+	this.content = str+"<h1>"+this.title+"</h1>"+endStr;
 }
 
 ArticleMetro.prototype.setContentArticle = function(content)
@@ -39,7 +39,7 @@ ArticleMetro.prototype.setContentArticle = function(content)
 	var str = '<div class="articleMetro btn'+this.idColor+' col-xs-12 col-sm-12 col-md-10 col-md-offset-1">';
 	var endStr = '</div>';
 
-	this.contentArticle = str+this.title+content+endStr;
+	this.contentArticle = str+"<h1>"+this.title+"</h1>"+content+endStr;
 }
 
 ArticleMetro.prototype.getTitle = function()

@@ -15,7 +15,7 @@ body{
 
 	color:#FFF;
 	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	padding-left:10px;
+	padding:10px;
 	text-align:left;
 	margin-bottom:2%;
 }
@@ -100,8 +100,7 @@ body{
 	color: white;
     font-size:2.5em;
 	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-   /* height:750px;*/
-    border:red solid 3px;
+
 
 }
 
@@ -122,3 +121,42 @@ body{
 {
 	margin-top:2%;
 }
+
+.productGallery img
+{
+    width:10em;
+}
+
+.productGallery
+{
+    padding:0.5em;
+    display:inline-block;
+    border:solid 3px red;
+  	cursor:pointer;
+
+}
+
+.productGallery img:hover
+{
+    background: gray;
+      opacity: 0.5;
+
+}
+
+.productGalleryToggleButton
+{
+    text-align:center;
+    display:none;
+}
+
+.productGalleryToggleButton *
+{
+    padding: 0.5em;
+
+}
+
+/*
+ *
+     position: relative;
+    top: -5em;
+*/
