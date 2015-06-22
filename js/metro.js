@@ -8,21 +8,21 @@ var organicMap = ['<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!
 
 var product ="\
 <div class='productGallery'><img class='img-circle img-responsive' src='img/carrots.jpg' />\n\
-<div class='productGalleryToggleButton'><i class='fa fa-cart-arrow-down fa-lg'></i><i class='fa fa-info-circle fa-lg'></i></div></div>\n\
+<div class='productGalleryToggleButton'><p class='prixProduct'>1,20 € / kg</p><i class='fa fa-cart-arrow-down fa-lg'></i><i class='fa fa-info-circle fa-lg'></i></div></div>\n\
 <div class='productGallery'><img class='img-circle img-responsive' src='img/potatoes.jpg' />\n\
-<div class='productGalleryToggleButton'><i class='fa fa-cart-arrow-down fa-lg'></i><i class='fa fa-info-circle fa-lg'></i></div></div>\n\
+<div class='productGalleryToggleButton'><p class='prixProduct'>1,30 € / kg</p><i class='fa fa-cart-arrow-down fa-lg'></i><i class='fa fa-info-circle fa-lg'></i></div></div>\n\
 <div class='productGallery'><img class='img-circle img-responsive' src='img/soup.jpg' />\n\
-<div class='productGalleryToggleButton'><i class='fa fa-cart-arrow-down fa-lg'></i><i class='fa fa-info-circle fa-lg'></i></div></div>\n\
+<div class='productGalleryToggleButton'><p class='prixProduct'>3,00 € / kg</p><i class='fa fa-cart-arrow-down fa-lg'></i><i class='fa fa-info-circle fa-lg'></i></div></div>\n\
 <div class='productGallery'><img class='img-circle img-responsive' src='img/betterave.jpg' />\n\
-<div class='productGalleryToggleButton'><i class='fa fa-cart-arrow-down fa-lg'></i><i class='fa fa-info-circle fa-lg'></i></div></div>\n\
+<div class='productGalleryToggleButton'><p class='prixProduct'>1,50 € / kg</p><i class='fa fa-cart-arrow-down fa-lg'></i><i class='fa fa-info-circle fa-lg'></i></div></div>\n\
 <div class='productGallery'><img class='img-circle img-responsive' src='img/chou.jpg' />\n\
-<div class='productGalleryToggleButton'><i class='fa fa-cart-arrow-down fa-lg'></i><i class='fa fa-info-circle fa-lg'></i></div></div>\n\
+<div class='productGalleryToggleButton'><p class='prixProduct'>1,50 € / kg</p><i class='fa fa-cart-arrow-down fa-lg'></i><i class='fa fa-info-circle fa-lg'></i></div></div>\n\
 <div class='productGallery'><img class='img-circle img-responsive' src='img/oignons.jpg' />\n\
-<div class='productGalleryToggleButton'><i class='fa fa-cart-arrow-down fa-lg'></i><i class='fa fa-info-circle fa-lg'></i></div></div>\n\
+<div class='productGalleryToggleButton'><p class='prixProduct'>Indisponnible</p><i class='fa fa-cart-arrow-down fa-lg'></i><i class='fa fa-info-circle fa-lg'></i></div></div>\n\
 <div class='productGallery'><img class='img-circle img-responsive' src='img/endives.jpg' />\n\
-<div class='productGalleryToggleButton'><i class='fa fa-cart-arrow-down fa-lg'></i><i class='fa fa-info-circle fa-lg'></i></div></div>\n\
+<div class='productGalleryToggleButton'><p class='prixProduct'>Indisponnible</p><i class='fa fa-cart-arrow-down fa-lg'></i><i class='fa fa-info-circle fa-lg'></i></div></div>\n\
 <div class='productGallery'><img class='img-circle img-responsive' src='img/cucumbers.jpg' />\n\
-<div class='productGalleryToggleButton'><i class='fa fa-cart-arrow-down fa-lg'></i><i class='fa fa-info-circle fa-lg'></i></div></div>";
+<div class='productGalleryToggleButton'><p class='prixProduct'>Indisponnible</p><i class='fa fa-cart-arrow-down fa-lg'></i><i class='fa fa-info-circle fa-lg'></i></div></div>";
 
 var Articles = [new ArticleMetro("Où trouver l'organic Truck?", organicMap[1],0),
 				new ArticleMetro("Nos produits", product,1),
@@ -85,6 +85,7 @@ function changeTopTitle(str)
 function toggleContentAndButtons()
 {
 	$("#contentApp, #buttonsToContent").slideToggle("slow");
+
 }
 
 $(document).ready(function(){
