@@ -131,7 +131,7 @@ body{
 {
     padding:0.5em;
     display:inline-block;
-    border:solid 3px red;
+    /*border:solid 3px red;*/
   	cursor:pointer;
 
 }
@@ -146,7 +146,7 @@ body{
 .productGalleryToggleButton
 {
     text-align:center;
-    display:none;
+    /*display:none;*/
 }
 
 .productGalleryToggleButton *
