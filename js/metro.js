@@ -24,10 +24,12 @@ var product ="\
 <div name='4586' class='productGallery'><img class='img-circle img-responsive' src='img/cucumbers.jpg' />\n\
 <div class='productGalleryToggleButton'><p class='prixProduct'>Indisponnible</p><i class='fa fa-cart-arrow-down fa-lg'></i><i class='fa fa-info-circle fa-lg'></i></div></div><script type='text/javascript' src='js/products.js'></script>";
 
+var recette ="<div class='partagedenosrecettes'><h1>Tarte poireau maroille</h1><img class='img-circle img-responsive' src='img/tarte poireau maroielle.jpg' /><p>Ingrédients : 5 poireaux de taille moyenne Un quart maroilles 10g de beurre 2 cuillères à soupe de crème fraiche épaisse 1 pâte brisée Sel, poivre 1 noix de muscade et 200g de lardon</p><p> Préparation : </p><p> Emincez les poireaux en fines rondelles.</p><p> Coupez le maroilles en fines tranches dans le sens de la longueur.</p><p> Dans une casserole, faites fondre la motié du beurre à feux doux puis versez les poireaux.</p><p> Couvrez et laissez cuire 10 minutes en remuant.</p><p> Une fois que les poireaux sont cuits, incorporez la crème fraiche, salez et poivrez. </p><p> Etalez la pâte dans un plat à tarte que vous aurez beurré.</p><p> Piquez la pâte puis versez-y les poireaux.</p><p> Répartissez les morceaux de maroilles.</p><p> Faites cuire à 180°C (th6) pendant 25 à 30 minutes. Servez chaud :) <3 <3 <3 </p></div>";
+
 var Articles = [new ArticleMetro("Où trouver l'organic Truck?", organicMap[1],0),
 				new ArticleMetro("Nos produits", product,1),
 				new ArticleMetro("Nos producteurs", "<p>Nos producteurs</p>",2),
-				new ArticleMetro("Partage de nos recettes", "<p>Hello world</p>",3),
+				new ArticleMetro("Partage de nos recettes", recette,3),
 				new ArticleMetro("Qui sommes nous?", "<p>Nos produits</p>",4),
 				new ArticleMetro("Partenaires", "<p>Nos partenaires</p>",5)];
 

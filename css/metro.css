@@ -103,10 +103,10 @@ body{
 .articleMetro
 {
 	color: white;
-    font-size:2.5em;
+    font-size:1.5em;
 	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 
-
+    text-align: justify;
 }
 
 
