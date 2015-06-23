@@ -66,7 +66,12 @@ body{
 
 }
 
-#contentApp{
+.btn5
+{
+    background: #221d1d;
+}
+
+#contentApp, #contentCompte{
 	z-index:0;
 	display: none;
 
@@ -158,6 +163,11 @@ body{
 .prixProduct
 {
     font-size:0.7em;
+}
+
+.compte
+{
+  	cursor:pointer;
 }
 
 /*

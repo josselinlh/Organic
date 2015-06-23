@@ -2,20 +2,8 @@
 $(".productGallery").click(function(){
 
     var attr = $(this).attr("name");
-    if(localStorage.getItem(attr) !== null)
-    {
-        localStorage.setItem(attr,parseInt(localStorage.getItem(attr))+1);
-        console.log("if : "+attr);
-        console.log(localStorage);
-    }
-    else
-    {
-        localStorage.setItem(attr,1);
-        console.log("else : "+attr);
-        console.log(localStorage);
+    pannier.addProducts(attr);
 
-
-    }
 
     //carrotes --> 9443
     //patate --> 5990
