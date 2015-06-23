@@ -121,6 +121,8 @@ $(document).ready(function(){
 
 
         refreshCompte();
+
+ window.onresize=function(){$(".btnMetro").height($(".btnMetro").width());};
   });
 
 })();
