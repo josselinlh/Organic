@@ -119,9 +119,6 @@ $(document).ready(function(){
   $("#backbutton").click(function(){clickToBackButton();})
   $(".compte").click(function(){clickToCompteButton();})
 
-
-        refreshCompte();
-
  window.onresize=function(){$(".btnMetro").height($(".btnMetro").width());};
   });
 
