@@ -18,6 +18,11 @@ function BasketProducts()
     //endive --> 4586
     //concombre --> 7675
     //
+
+BasketProducts.prototype.getPrix = function()
+{
+    return this.prix;
+}
 BasketProducts.prototype.getNameFromId = function(id)
 {
     var curentId = parseInt(id);
@@ -92,15 +97,16 @@ BasketProducts.prototype.getInfoFromLocalStorage = function()
 {
     for(var prop in localStorage)
     {
-        if(localStorage.hasOwnProperty(prop))
+        if(prop=="prix")
+        {
+            this.prix=localStorage[prop];
+        }
+        else if(localStorage.hasOwnProperty(prop))
         {
             this.products[prop] = parseInt(localStorage.getItem(prop));
 
         }
-        if(prop=="prix")
-        {
-            this.prix=this.products[prop];
-        }
+
     }
 
     this.refreshNbProducts();
@@ -122,6 +128,14 @@ BasketProducts.prototype.getNbProducts = function()
     return this.nbProducts;
 }
 
+BasketProducts.prototype.clear = function()
+{
+    localStorage.clear();
+	this.prix = 0;
+    this.products = {};
+    this.nbProducts = 0;
+}
+
 BasketProducts.prototype.addProducts = function(attr)
 {
     if(this.products[attr]===undefined)
@@ -131,7 +145,7 @@ BasketProducts.prototype.addProducts = function(attr)
 
     this.addInLocalStorage(attr);
     this.addPrix(this.getPriceFromId(attr));
-    this.nbProducts=this.nbProducts++;
+    this.nbProducts=this.nbProducts+1;
 
 }
 
@@ -151,12 +165,24 @@ BasketProducts.prototype.addInLocalStorage = function(attr, value)
 BasketProducts.prototype.print = function()
 {
     var tmpStr = "<h1>Bienvenue sur votre compte</h1><ul>Votre Panier contient "+this.getNbProducts()+" Produits : ";
+    var clear = "<p class='basketClear'>Vider le panier</p>";
+    if(this.getNbProducts()==0)
+    {
+        tmpStr="<h1>Bienvenue sur votre compte</h1><p>Votre panier est vide.</p>";
+        clear = "";
+     }
+
+
      for(var tmpObj in this.products)
     {
-        tmpStr=tmpStr+"<li>"+this.products[tmpObj]+" X "+this.getNameFromId(tmpObj)+" : "+Math.round(this.products[tmpObj]*this.getPriceFromId(tmpObj)*100)/100+" €</li>";
+
+            tmpStr=tmpStr+"<li>"+this.products[tmpObj]+" X "+this.getNameFromId(tmpObj)+" : "+Math.round(this.products[tmpObj]*this.getPriceFromId(tmpObj)*100)/100+" €</li>";
+
+
     }
 
-    tmpStr=tmpStr+"</ul><p>Total "+this.prix+" €</p>";
+    tmpStr=tmpStr+"</ul><p>Total "+this.getPrix()+" €</p>"+clear;
+
     return tmpStr;
 
 }

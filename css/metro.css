@@ -135,15 +135,20 @@ body{
 {
     padding:0.5em;
     display:inline-block;
-  	cursor:pointer;
 
 }
 
 .productGallery img:hover
 {
-    background: gray;
-      opacity: 0.5;
+    /*background: gray;
+      opacity: 0.5;*/
 
+}
+
+.productGallery i:hover
+{
+      opacity: 0.5;
+      cursor:pointer;
 }
 
 .productGalleryToggleButton
@@ -173,7 +178,6 @@ body{
 .compte p
 {
     text-align: center;
-
 }
 
 .compte:hover
@@ -198,4 +202,23 @@ body{
     {
         width:60%;
     }
+}
+
+.partenairesMetro img
+{
+    display:inline-block;
+    width:45%;
+    padding:2.5%;
+}
+
+.aboutMetro img
+{
+    width:45%;
+    padding:2.5%;
+    float:left;
+}
+
+.basketClear
+{
+    cursor:pointer;
 }
