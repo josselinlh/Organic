@@ -81,13 +81,13 @@ BasketProducts.prototype.getPriceFromId = function(id)
 
 BasketProducts.prototype.setPrix = function(newPrice)
 {
-    this.prix=newPrice;
+    this.prix=Math.round(newPrice*100)/100;
     this.addInLocalStorage("prix",this.prix);
 }
 
 BasketProducts.prototype.addPrix = function(newPrice)
 {
-    this.prix=this.prix+newPrice;
+    this.prix=Math.round((this.prix+newPrice)*100)/100;
     this.addInLocalStorage("prix",this.prix);
 
 }
