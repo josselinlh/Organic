@@ -172,10 +172,19 @@ body{
 
 .bannerMetro img
 {
-    width:60%;
+    width:70%;
 }
-/*
- *
-     position: relative;
-    top: -5em;
-*/
+
+@media screen and (max-width: 768px) {
+  .bannerMetro img
+    {
+        width:100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+  .bannerMetro img
+    {
+        width:60%;
+    }
+}

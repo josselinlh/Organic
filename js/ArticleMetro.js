@@ -39,7 +39,7 @@ ArticleMetro.prototype.setContentArticle = function(content)
 	var str = '<div class="articleMetro btn'+this.idColor+' col-xs-12 col-sm-12 col-md-10 col-md-offset-1">';
 	var endStr = '</div>';
 
-	this.contentArticle = str+"<h1>"+this.title+"</h1>"+content+endStr;
+	this.contentArticle = str+"<h1>"+this.title+"</h1><img src='img/camion.png'"+content+endStr;
 }
 
 ArticleMetro.prototype.getTitle = function()
