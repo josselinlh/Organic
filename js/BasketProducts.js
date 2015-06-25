@@ -40,7 +40,7 @@ BasketProducts.prototype.getNameFromId = function(id)
         tmpName="Kilo de chou";
         break;
     default:
-        tmpName="Indisponnible";
+        tmpName="Indisponible";
     }
 
     return tmpName;
@@ -150,7 +150,7 @@ BasketProducts.prototype.addInLocalStorage = function(attr, value)
 
 BasketProducts.prototype.print = function()
 {
-    var tmpStr = "<h1>Bienvenue sur votre compte</h1><ul>Votre Pannier contient "+this.getNbProducts()+" Produits : ";
+    var tmpStr = "<h1>Bienvenue sur votre compte</h1><ul>Votre Panier contient "+this.getNbProducts()+" Produits : ";
      for(var tmpObj in this.products)
     {
         tmpStr=tmpStr+"<li>"+this.products[tmpObj]+" X "+this.getNameFromId(tmpObj)+" : "+Math.round(this.products[tmpObj]*this.getPriceFromId(tmpObj)*100)/100+" €</li>";

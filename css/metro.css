@@ -23,7 +23,7 @@ body{
 .btnMetro
 {
 	height:10em;
-	font-size:2.5em;
+	font-size:1.9em;
   	cursor:pointer;
 
 }
@@ -118,7 +118,6 @@ body{
 	font-size:2.5em;
 	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	padding-top:2%;
-	padding-bottom:2%;
 
 }
 
@@ -136,7 +135,6 @@ body{
 {
     padding:0.5em;
     display:inline-block;
-    /*border:solid 3px red;*/
   	cursor:pointer;
 
 }
@@ -168,6 +166,19 @@ body{
 .compte
 {
   	cursor:pointer;
+    border-radius: 0.4em 0.4em 0 0;
+
+}
+
+.compte p
+{
+    text-align: center;
+
+}
+
+.compte:hover
+{
+    background-color:#382f2f;
 }
 
 .bannerMetro img
